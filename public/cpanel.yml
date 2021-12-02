@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/justcod1/public_html/
+ - /bin/cp * $DEPLOYPATH
