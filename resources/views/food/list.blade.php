@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
     	@foreach($categories as $category)
     	<div class="col-md-12">
-    		<h2 style="color:blue;">{{$category->name}} Khushal </h2>
+    		<h2 style="color:blue;">{{$category->name}} Khushal Dayala </h2>
     		<div class="jumbotron">
     			<div class="row">
     				@foreach(App\Food::where('category_id',$category->id)->get() as $food)
@@ -16,7 +16,6 @@
                     </a>
     					<p class="text-center">{{$food->name}}
     						<span>${{$food->price}}</span>
-    					
     					</p>
     					<p class="text-center"><a href="{{route('food.view',[$food->id])}}">
     						<button class="btn btn-outline-danger">
