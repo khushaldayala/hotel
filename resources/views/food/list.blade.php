@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
     	@foreach($categories as $category)
     	<div class="col-md-12">
-    		<h2 style="color:blue;">{{$category->name}}</h2>
+    		<h2 style="color:blue;">{{$category->name}} test</h2>
     		<div class="jumbotron">
     			<div class="row">
     				@foreach(App\Food::where('category_id',$category->id)->get() as $food)
